@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 
 app.use('/api/tasks', routeTasks, (req, res) => res.sendStatus(401));
 
+app.use('/api/what are you doing', code)
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
